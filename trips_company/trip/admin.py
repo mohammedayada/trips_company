@@ -5,3 +5,4 @@ from .models import Trip
 @admin.register(Trip)
 class TripAdmin(admin.ModelAdmin):
     list_display = ('name', 'price', 'start_date', 'start_location', 'end_location')
+
