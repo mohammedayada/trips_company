@@ -8,4 +8,6 @@ class Driver(models.Model):
     phone = models.CharField(max_length=11)
     email = models.EmailField()
     birthday = models.DateField(default=now)
+    def __str__(self):
+        return self.name
 
